@@ -19,10 +19,7 @@ body {
 .p,
 .h1,
 .h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+.h3 {
   margin: 0;
 }
 
@@ -40,18 +37,19 @@ img {
 .container {
   width: 1158px;
   margin: 0 auto;
-  display: flex;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: 3px solid red;
 }
 
 .header {
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
-  justify-content: flex-end;
-  outline: 7px dashed tomato;
 }
 
-.section {
+header > .container {
+  display: flex;
 }
 
 .header-nav {
@@ -72,7 +70,6 @@ img {
   color: var(--dark-blue);
   text-decoration: none;
   letter-spacing: 0.03em;
-  display: block;
   padding-left: 156px;
 }
 
@@ -82,6 +79,7 @@ img {
   font-size: 18px;
   line-height: 1.16;
   color: var(--general-font);
+  padding-right: 40px;
 }
 
 .header-nav-list {
@@ -90,7 +88,7 @@ img {
   line-height: 1.5;
   color: var(--general-font);
   letter-spacing: 0.02em;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .header-nav-item {
@@ -118,14 +116,6 @@ img {
   line-height: calc(24 / 16);
   text-decoration: none;
   color: var(--color-slate);
-  display: flex;
-}
-
-.header-contacts-tel {
-  color: var(--color-slate);
-  text-decoration: none;
-  line-height: calc(24 / 16);
-  padding-right: 156px;
 }
 
 .header-contacts-email {
@@ -135,11 +125,20 @@ img {
   padding-right: 40px;
 }
 
+.header-contacts-tel {
+  color: var(--color-slate);
+  text-decoration: none;
+  line-height: calc(24 / 16);
+}
+
 .header-contacts-tel:hover,
 .header-contacts-email:hover,
 .header-contacts-tel:focus,
 .header-contacts-email:focus {
   color: var(--color-ocean);
+}
+
+.section {
 }
 
 .portfolio-btn {
@@ -162,6 +161,9 @@ img {
 
 .hero {
   background-color: var(--general-font);
+  align-items: center;
+  padding-top: 192px;
+  padding-bottom: 192px;
 }
 
 .hero-title {
@@ -170,6 +172,8 @@ img {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
+  max-width: 494px;
+  margin: 0 auto;
 }
 
 .hero-btn {
@@ -181,6 +185,15 @@ img {
   color: var(--color-white);
   background-color: var(--dark-blue);
   cursor: pointer;
+  display: inline-block;
+  width: 169px;
+  height: 56px;
+  padding: 16px, 32px, 16px, 32px;
+  border-radius: 4px;
+  margin-top: 48px;
+  margin-right: 500px;
+  margin-left: 500px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn:hover,
