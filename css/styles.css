@@ -39,13 +39,14 @@ img {
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 3px solid red;
+  outline: 1px solid red;
 }
 
 .header {
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-header);
 }
 
 header > .container {
@@ -60,6 +61,9 @@ header > .container {
   text-decoration: none;
   display: flex;
   align-items: center;
+  flex: wrap;
+  gap: 40px;
+  margin-right: 332px;
 }
 
 .header-logo {
@@ -70,7 +74,6 @@ header > .container {
   color: var(--dark-blue);
   text-decoration: none;
   letter-spacing: 0.03em;
-  padding-left: 156px;
 }
 
 .header-logo-studio {
@@ -79,7 +82,6 @@ header > .container {
   font-size: 18px;
   line-height: 1.16;
   color: var(--general-font);
-  padding-right: 40px;
 }
 
 .header-nav-list {
@@ -88,11 +90,12 @@ header > .container {
   line-height: 1.5;
   color: var(--general-font);
   letter-spacing: 0.02em;
-  padding-left: 40px;
 }
 
 .header-nav-item {
   display: flex;
+  flex: wrap;
+  gap: 40px;
 }
 
 .header-link {
@@ -110,19 +113,23 @@ header > .container {
 
 .header-contacts {
   display: flex;
+  padding: 0;
 }
 
 .header-contacts {
   line-height: calc(24 / 16);
   text-decoration: none;
   color: var(--color-slate);
+  display: flex;
+  flex: wrap;
+  gap: 40px;
 }
 
 .header-contacts-email {
   line-height: calc(24 / 16);
   color: var(--color-slate);
   text-decoration: none;
-  padding-right: 40px;
+  display: flex;
 }
 
 .header-contacts-tel {
@@ -138,9 +145,6 @@ header > .container {
   color: var(--color-ocean);
 }
 
-.section {
-}
-
 .portfolio-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -148,6 +152,7 @@ header > .container {
   line-height: calc(24 / 16);
   background-color: var(--background-color-btn);
   color: var(--dark-blue);
+  text-align: center;
   border: none;
   cursor: pointer;
 }
@@ -161,7 +166,6 @@ header > .container {
 
 .hero {
   background-color: var(--general-font);
-  align-items: center;
   padding-top: 192px;
   padding-bottom: 192px;
 }
@@ -191,8 +195,8 @@ header > .container {
   padding: 16px, 32px, 16px, 32px;
   border-radius: 4px;
   margin-top: 48px;
-  margin-right: 500px;
-  margin-left: 500px;
+  margin-right: 480px;
+  margin-left: 480px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -203,6 +207,19 @@ header > .container {
 
 .list {
   list-style: none;
+}
+
+.about-work {
+  padding-top: 120px;
+}
+
+.list-work {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-list-element {
+  width: 264px;
 }
 
 .title-element {
@@ -253,19 +270,45 @@ header > .container {
   color: var(--color-slate);
 }
 
+.screen-section {
+  padding-top: 120px;
+}
+
 .screen {
+  text-align: center;
   font-weight: 500;
   font-size: 36px;
   line-height: calc(40 / 36);
   color: var(--general-font);
+  margin-bottom: 72px;
+  margin-top: 0;
+}
+
+.list-screen {
+  display: flex;
+  justify-content: space-between;
+  flex: wrap;
+  gap: 24px;
+  padding-left: 0;
 }
 
 .team {
   background-color: var(--color-creamy);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.team-item {
   background-color: var(--color-white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .title-team {
@@ -273,6 +316,8 @@ header > .container {
   font-size: 36px;
   line-height: calc(40 / 36);
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 72px;
 }
 
 .title-name {
@@ -280,11 +325,16 @@ header > .container {
   font-size: 20px;
   line-height: calc(24 / 20);
   color: var(--general-font);
+  text-align: center;
+  margin-top: 32px;
 }
 
 .position-team {
   line-height: calc(24 / 16);
   color: var(--color-slate);
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 32px;
 }
 
 .footer {
@@ -292,6 +342,9 @@ header > .container {
 }
 
 .footer-logo {
+  display: block;
+  padding-top: 100px;
+  margin-bottom: 16px;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -312,4 +365,10 @@ header > .container {
 
 .footer-text {
   color: var(--background-color-btn);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  padding-bottom: 100px;
+  display: inline-block;
+  width: 264px;
 }
